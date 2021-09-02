@@ -1,0 +1,52 @@
+/* RESET */
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a, ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    padding-inline-start: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+body{
+    font-family: 'Satisfy', cursive;
+}
+
+:root {
+    --fundoIcone: #dae5e8;
+    --corLetraIcone: #b3babb;
+}
+
+.cabecalho {
+    background-color: var(--fundoIcone);
+}
+
+.cabecalho-logo {    
+}
+
+.navegacao {}
+
+.navegacao-lista {}
+
+.descricao {
+    background-color: var(--corLetraIcone);
+}
+
+.descricao-produto {}
+
+.descricao-img {}
+
+.lancamentos {}
+
+.lancamentos-produto {}
+
+.vantagens-produto {}
+
+.promocao {}
+
+.promocao-produto {}
+
+footer {}
