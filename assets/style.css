@@ -21,10 +21,14 @@ body{
 }
 
 .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--fundoIcone);
 }
 
-.cabecalho-logo {    
+.cabecalho-logo img { 
+    width: 200px;   
 }
 
 .navegacao {}
@@ -43,7 +47,7 @@ body{
 
 .lancamentos-produto {}
 
-.vantagens-produto {}
+.vantagensDoproduto {}
 
 .promocao {}
 
