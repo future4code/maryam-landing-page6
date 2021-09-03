@@ -13,11 +13,13 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a, ul{
 
 body{
     font-family: 'Satisfy', cursive;
+    width: 100%;
 }
 
 :root {
     --fundoIcone: #dae5e8;
     --corLetraIcone: #b3babb;
+    --background-footer: #212a2f;
 }
 
 .cabecalho {
@@ -86,12 +88,36 @@ body{
     background-color: var(--corLetraIcone);
 }
 
-.promocao {
+.promocao {    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--fundoIcone);
+    align-items: flex-end;
+    /* justify-content: center; */
+    /* background-color: var(--fundoIcone); */
+    background-image: url("/assets/img/feminino-tenisroxo-fundoroxo.jpg") ;
+    height: 100vh; /* You must set a specified height */
+    width: 100vw;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+/* .promocao img {
+    width: 100%;    
+} */
+
+.promocao-botao {
+    padding: 10px;
+}
+
+.btn {
+    /* position: absolute;     */
+    /* left: 10px;         */
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+ }
+
+
 
 .promocao-produto  {
     padding: 16px;
@@ -106,27 +132,30 @@ body{
     align-items: center;
     justify-content: center;
     align-content: center;
+    background-color: #f1ebe6;
 }
 
 .contato-titulo {}
 
 .contato-img {}
+
 .contato-img img {
-    padding: 16px;
-    width: 600px;
+    /* padding: 16px; */
+    width: 100%;
 }
 footer {
-    font-size: 30px;
-    background-color: var(--corLetraIcone);
+    font-size: 30px;    
+    background-color: var(--background-footer);
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+    color: #b3babb;
 }
 
 footer a {
-    padding: 10px;
-    color: black;
+    padding: 10px;    
+    color: #dae5e8;
 }
 
 .redesSociais {
