@@ -31,26 +31,108 @@ body{
     width: 200px;   
 }
 
-.navegacao {}
+.navegacao {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 5px 8px;
+    font-size: 30px;
+}
 
-.navegacao-lista {}
+.navegacao-lista {
+    display: flex;
+    
+}
 
 .descricao {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 16px;
+    font-size: 20px;
     background-color: var(--corLetraIcone);
 }
 
 .descricao-produto {}
 
-.descricao-img {}
+.descricao-img {
+    
+}
 
-.lancamentos {}
+.lancamentos {
+    background-color: var(--fundoIcone);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.lancamentos-produto {}
+}
 
-.vantagensDoproduto {}
+.lancamentos-produto {
+    padding: 16px;
+}
+.lancamentos img {
+    width: 400px;
+}
 
-.promocao {}
+.vantagensDoProduto {
+    font-size: 20px;
+    background-color: var(--corLetraIcone);
+}
 
-.promocao-produto {}
+.promocao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--fundoIcone);
+}
 
-footer {}
+.promocao-produto  {
+    padding: 16px;
+}
+
+.promocao-produto  img {
+    width: 500px;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.contato-titulo {}
+
+.contato-img {}
+.contato-img img {
+    padding: 16px;
+    width: 600px;
+}
+footer {
+    font-size: 30px;
+    background-color: var(--corLetraIcone);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+footer a {
+    padding: 10px;
+    color: black;
+}
+
+.redesSociais {
+    padding: 10px;
+    display: flex;    
+    align-items: center;
+    font-size: 50px;    
+}
+
+.redesSociais a {}
+
+.atendimento {
+    display: flex;    
+    align-items: center;
+}
