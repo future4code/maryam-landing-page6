@@ -13,6 +13,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a, ul{
 
 body{
     font-family: 'Satisfy', cursive;
+    width: 100%;
 }
 
 :root {
@@ -80,12 +81,27 @@ body{
     background-color: var(--corLetraIcone);
 }
 
-.promocao {
+.promocao {    
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--fundoIcone);
+    align-items: flex-end;
+    /* justify-content: center; */
+    /* background-color: var(--fundoIcone); */
+    /* background-image: url("/assets/img/feminino-tenisroxo-fundoroxo.jpg") ; */
 }
+
+.promocao img {
+    width: 100%;    
+}
+
+.btn {
+    position: absolute;    
+    left: 10px;        
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+ }
+
+
 
 .promocao-produto  {
     padding: 16px;
@@ -100,14 +116,16 @@ body{
     align-items: center;
     justify-content: center;
     align-content: center;
+    background-color: #f1ebe6;
 }
 
 .contato-titulo {}
 
 .contato-img {}
+
 .contato-img img {
-    padding: 16px;
-    width: 600px;
+    /* padding: 16px; */
+    width: 100%;
 }
 footer {
     font-size: 30px;
