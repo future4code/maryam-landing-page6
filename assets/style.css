@@ -20,6 +20,7 @@ body{
     --fundoIcone: #dae5e8;
     --corLetraIcone: #b3babb;
     --background-footer: #212a2f;
+    --background-ovelha: #f1ebe6;
 }
 
 .cabecalho {
@@ -42,11 +43,21 @@ body{
 }
 
 .navegacao-lista {
-    display: flex;
-    
+    display: flex;    
 }
 
+.navegacao-lista li, i {
+    padding: 8px;
+}
+
+.navegacao-lista li:hover{
+    background-color: var(--corLetraIcone);
+}
+
+
+
 .descricao {
+    height: 100vh;    
     display: flex;
     align-items: center;
     align-content: center;
@@ -62,31 +73,39 @@ body{
 }
 
 .lancamentos {
-    background-color: var(--fundoIcone);
-    padding: 16px;
+    background-color: var(--background-ovelha);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lancamentos-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: space-evenly;
 }
 
 .lancamentos-produto {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     padding: 16px;
-}
-.lancamentos img {
-    width: 400px;
+    width: 500px;    
 }
 
-.vantagensDoProduto {
-    font-size: 20px;
+.lancamentos img {
+    width: 100%;
+}
+
+.lancamentos-produto a:hover {
     background-color: var(--corLetraIcone);
+    color: var(--background-footer);    
 }
 
 .promocao {    
     display: flex;
-    align-items: flex-end;
-    /* justify-content: center; */
-    /* background-color: var(--fundoIcone); */
+    align-items: flex-end;   
     background-image: url("/assets/img/feminino-tenisroxo-fundoroxo.jpg") ;
     height: 100vh; /* You must set a specified height */
     width: 100vw;
@@ -95,23 +114,40 @@ body{
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-/* .promocao img {
-    width: 100%;    
-} */
+.vantagensDoProduto {    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;    
+    font-size: 20px;
+    background-color: var(--corLetraIcone);
+    
+}
+
+.vantagensDoProduto-container-cards {
+    display: flex;    
+    align-items: center;
+    align-content: center;  
+    justify-content: space-evenly;     
+}
+
+.vantagensDoProduto-card {
+    font-size: small;
+}
+
+.vantagensDoProduto-card img {
+    width: 200px;
+}
 
 .promocao-botao {
     padding: 10px;
 }
 
-.btn {
-    /* position: absolute;     */
-    /* left: 10px;         */
+.btn {    
     width: 100px;
     height: 60px;
     border-radius: 15px;
  }
-
-
 
 .promocao-produto  {
     padding: 16px;
@@ -126,7 +162,7 @@ body{
     align-items: center;
     justify-content: center;
     align-content: center;
-    background-color: #f1ebe6;
+    background-color: var(--background-ovelha);
 }
 
 .contato-titulo {}
@@ -164,4 +200,203 @@ footer a {
 .atendimento {
     display: flex;    
     align-items: center;
+}
+
+
+
+
+
+
+@media  screen and (min-width:  375px) {
+    body{
+        font-family: 'Satisfy', cursive;
+        width: 100%;
+    }
+    
+    :root {
+        --fundoIcone: #dae5e8;
+        --corLetraIcone: #b3babb;
+        --background-footer: #212a2f;
+        --background-ovelha: #f1ebe6;
+    }
+    
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--fundoIcone);
+    }
+    
+    .cabecalho-logo img { 
+        width: 200px;   
+    }
+    
+    .navegacao {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        padding: 5px 8px;
+        font-size: 30px;
+    }
+    
+    .navegacao-lista {
+        display: flex;    
+    }
+    
+    .navegacao-lista li, i {
+        padding: 8px;
+    }
+    
+    .navegacao-lista li:hover{
+        background-color: var(--corLetraIcone);
+    }
+    
+    
+    
+    .descricao {
+        height: 100vh;    
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 16px;
+        font-size: 20px;
+        background-color: var(--corLetraIcone);
+    }
+    
+    .descricao-produto {}
+    
+    .descricao-img {
+        
+    }
+    
+    .lancamentos {
+        background-color: var(--background-ovelha);    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .lancamentos-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .lancamentos-produto {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 16px;
+        width: 500px;    
+    }
+    
+    .lancamentos img {
+        width: 100%;
+    }
+    
+    .lancamentos-produto a:hover {
+        background-color: var(--corLetraIcone);
+        color: var(--background-footer);    
+    }
+    
+    .promocao {    
+        display: flex;
+        align-items: flex-end;   
+        background-image: url("/assets/img/feminino-tenisroxo-fundoroxo.jpg") ;
+        height: 100vh; /* You must set a specified height */
+        width: 100vw;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    
+    .vantagensDoProduto {    
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-content: center;    
+        font-size: 20px;
+        background-color: var(--corLetraIcone);
+        
+    }
+    
+    .vantagensDoProduto-container-cards {
+        display: flex;    
+        align-items: center;
+        align-content: center;  
+        justify-content: space-evenly;     
+    }
+    
+    .vantagensDoProduto-card {
+        font-size: small;
+    }
+    
+    .vantagensDoProduto-card img {
+        width: 200px;
+    }
+    
+    .promocao-botao {
+        padding: 10px;
+    }
+    
+    .btn {    
+        width: 100px;
+        height: 60px;
+        border-radius: 15px;
+     }
+    
+    .promocao-produto  {
+        padding: 16px;
+    }
+    
+    .promocao-produto  img {
+        width: 500px;
+    }
+    
+    .contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        background-color: var(--background-ovelha);
+    }
+    
+    .contato-titulo {}
+    
+    .contato-img {}
+    
+    .contato-img img {
+        /* padding: 16px; */
+        width: 100%;
+    }
+    footer {
+        font-size: 30px;    
+        background-color: var(--background-footer);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        color: #b3babb;
+    }
+    
+    footer a {
+        padding: 10px;    
+        color: #dae5e8;
+    }
+    
+    .redesSociais {
+        padding: 10px;
+        display: flex;    
+        align-items: center;
+        font-size: 50px;    
+    }
+    
+    .redesSociais a {}
+    
+    .atendimento {
+        display: flex;    
+        align-items: center;
+    }
+    
 }

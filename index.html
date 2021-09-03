@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="media-iphone.css">
     <title>Document</title>
 </head>
 
@@ -20,9 +21,9 @@
         </div>
         <nav class="navegacao">
             <ul class="navegacao-lista">
-                <li> <a href="#">Produtos</a></li>
-                <li> <a href="#">Store</a></li>
-                <li> <a href="#">Carrinho</a></li>                
+                <li> <a href="#"><i class="fa fa-shopping-bag"></i>Produtos</a></li>
+                <li> <a href="#"><i class="fa fa-shopping-basket"></i>Store</a></li>
+                <li> <a href="#"><i class="fa fa-shopping-cart"></i>Carrinho</a></li>
             </ul>
         </nav>
     </header>
@@ -41,41 +42,51 @@
         </div>
 
         <div class="lancamentos">
-            <div class="lancamentos-produto">
-                <img src="/assets/img/tenisEpernas3.jpg" alt="">
+            <h1>Favoritos</h1>
+            <div class="lancamentos-container">
+                <div class="lancamentos-produto">
+                    <a href="#"><img src="/assets/img/tenisEpernas3.jpg" alt="">
+                        <h1>O mais procurado</h1>
+                    </a>
+                </div>
+                <div class="lancamentos-produto">
+                    <a href="#"><img src="/assets/img/caminhando.jpg" alt="">
+                        <h1>Passeio</h1>
+                    </a>
+                </div>
+                <div class="lancamentos-produto">
+                    <a href="#"><img src="/assets/img/tenisEpernas2.jpg" alt="">
+                        <h1>Corrida</h1>
+                    </a>
+                </div>
             </div>
-            <div class="lancamentos-produto">
-                <img src="/assets/img/caminhando.jpg" alt="">
+        </div>
+
+        <div class="promocao">
+            <div class="promocao-botao">
+                <button class="btn" onclick="window.location.href = '#'"> Store </button>
             </div>
-            <div class="lancamentos-produto">
-                <img src="/assets/img/tenisEpernas2.jpg" alt="">
+            <div class="promocao-botao">
+                <button class="btn" onclick="window.location.href = '#'"> Comprar </button>
             </div>
         </div>
 
         <div class="vantagensDoProduto">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iusto eveniet accusantium mollitia
-                odit, sit ipsa laborum officiis iste repellendus laboriosam voluptatum, cumque ratione quibusdam
-                cupiditate iure dolore id assumenda.</h1>
-        </div>
-
-        <div class="promocao">
-            
-                <!-- <img src="/assets/img/feminino-tenisroxo-fundoroxo.jpg" alt="">             -->
-            <div class="promocao-botao"> 
-                <button  class="btn" onclick="window.location.href = '#'"> Store </button>
+            <h1>Materiais que usamos:</h1>
+            <div class="vantagensDoProduto-container-cards">
+                <div class="vantagensDoProduto-card">
+                    <img src="/assets/img/plasticoReciclado.jpg" alt="">
+                    <h1>Plastico de garrafas Pet reclicado</h1>
+                </div>
+                <div class="vantagensDoProduto-card">
+                    <img src="/assets/img/oleoDeMamona.jpg" alt="">
+                    <h1>Óleo de mamona</h1>
+                </div>
+                <div class="vantagensDoProduto-card">
+                    <img src="/assets/img/papelaoReciclado.jpg" alt="">
+                    <h1>Papelão reciclado</h1>
+                </div>
             </div>
-            <div class="promocao-botao">
-                <button  class="btn" onclick="window.location.href = '#'"> Comprar </button>
-            </div>
-               
-                
-            
-            <!-- <div class="promocao-produto">
-                <img src="/assets/img/tenispreto.jpg" alt="">
-            </div>
-            <div class="promocao-produto">
-                <img src="/assets/img/tenisBranco1.jpeg" alt="">
-            </div> -->
         </div>
 
         <div class="contato">
@@ -83,22 +94,20 @@
                 <img src="/assets/img/ovelha.gif" alt="">
             </div>
             <div class="contato-titulo">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cumque in repellendus
-                    voluptatem deleniti consequuntur unde est excepturi blanditiis, inventore ipsa, voluptates, cum et
-                    ullam esse adipisci quod accusamus at.</h1>
+                <h1>Gostou dos nossos produtos?.</h1>
+                <h1>A 4Confort está esperando seu contato para disponibilizarmos o produto que você deseja!</h1>
             </div>
         </div>
-
     </main>
 
     <footer>
         <h1>Redes sociais</h1>
         <div class="redesSociais">
-            <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
-            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-            <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-            <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
-            <a class="youTube" href="#"><i class="fa fa-youtube-play"></i></a>
+            <a target="_blanck" class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+            <a target="_blanck" class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+            <a target="_blanck" class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            <a target="_blanck" class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+            <a target="_blanck" class="youTube" href="#"><i class="fa fa-youtube-play"></i></a>
         </div>
 
         <h2> Atendimento</h2>
