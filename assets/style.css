@@ -40,8 +40,14 @@ body{
 }
 
 .navegacao-lista {
-    display: flex;
-    
+    display: flex;    
+}
+.navegacao-lista li, i {
+    padding: 8px;
+}
+
+.navegacao-lista :hover {
+    background-color: var(--corLetraIcone);
 }
 
 .descricao {
