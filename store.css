@@ -22,6 +22,10 @@ main{
     margin:auto;
 }  
 
+.tenistore:hover{
+    background-color: var(--fundoIcone);
+}
+
 @media screen and (max-width:376px) { 
   main{
     display:flex;

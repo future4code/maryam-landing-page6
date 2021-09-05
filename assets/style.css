@@ -59,15 +59,13 @@ body {
   display: flex;
   align-items: center;
   align-content: center;
-  padding: 16px;
-  font-size: 20px;
+  padding: 16px;  
   background-color: var(--corLetraIcone);
 }
 
 .descricao-produto {
   font-size: 25px;
 }
-.descricao-img {}
 
 .lancamentos {
   background-color: var(--background-ovelha);
@@ -243,4 +241,3 @@ footer a {
   display: flex;
   align-items: center;
 }
-
