@@ -1,77 +1,7 @@
-html,
-body,
-figure,
-div,
-input,
-textarea,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-a,
-ul {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-  border: none;
-  padding-inline-start: 0px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-
-body {
-    font-family: "Satisfy", cursive;
-    width: 100%;
-    height: 100%;
+body {      
     background-color: rgb(145, 146, 148);
-
   }
-  
-  :root {
-    --fundoIcone: #dae5e8;
-    --corLetraIcone: #b3babb;
-    --background-footer: #212a2f;
-    --background-ovelha: #f1ebe6;
-  }
-  
-  .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--fundoIcone);
-  }
-  
-  .cabecalho-logo img {
-    width: 200px;
-  }
-  
-  .navegacao {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    padding: 5px 8px;
-    font-size: 30px;
-  }
-  
-  .navegacao-lista {
-    display: flex;
-  }
-  
-  .navegacao-lista li,
-  i {
-    padding: 8px;
-  }
-  
-  .navegacao-lista :hover {
-    background-color: var(--corLetraIcone);
-  }
-  
+     
 main{
     display:flex;
     }
@@ -82,8 +12,7 @@ main{
     .tenistore {
         display: grid;
         margin: 15px;
-        border: 10px solid black;
-      
+        border: 10px solid black;      
     }
     
 #tenis {
@@ -91,157 +20,27 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     margin:auto;
+}  
+
+@media screen and (max-width:376px) { 
+  main{
+    display:flex;
+    }
+
+    .imagemtenis{
+        width: 100px;
+    }
+    .tenistore {
+        align-items: center;
+        justify-items: center;
+        margin: 5px;
+        border: 2px solid black; 
+        font-size: 12px;     
+    }
+    
+  #tenis {
+      display: grid;
+      grid-template-columns: 1fr 1fr;   
+  } 
+
 }
-
-  
-.contato {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    background-color: var(--background-ovelha);
-  }
-  
-  .contato-titulo {
-  }
-  
-  .contato-img {
-  }
-  
-  .contato-img img {
-    /* padding: 16px; */
-    width: 100%;
-  }
-  footer {
-    font-size: 30px;
-    background-color: var(--background-footer);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    color: #b3babb;
-  }
-  
-  footer{
-    padding: 10px;
-    color: #dae5e8;
-  }
-  
-  .redesSociais {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-  }
-  
-  .redesSociais a {
-  }
-  
-  .atendimento {
-    display: flex;
-    align-items: center;
-  }
-  
-@media screen and (min-width: 375px) {
-    body {
-      font-family: "Satisfy", cursive;
-      width: 100%;
-    }
-  
-    :root {
-      --fundoIcone: #dae5e8;
-      --corLetraIcone: #b3babb;
-      --background-footer: #212a2f;
-      --background-ovelha: #f1ebe6;
-    }
-  
-    .cabecalho {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--fundoIcone);
-    }
-  
-    .cabecalho-logo img {
-      width: 150px;
-    }
-  
-    .navegacao {
-      color: #fff;
-      text-decoration: none;
-      border-bottom: 2px solid transparent;
-      padding: 10px 4px;
-      font-size: 22px;
-    }
-  
-    .navegacao-lista {
-      display: flex;
-    }
-  
-    .navegacao-lista li,
-    i {
-      padding: 3px;
-    }
-  
-    .navegacao-lista li:hover {
-      background-color: var(--corLetraIcone);
-    }
-  
-    .contato {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      align-content: center;
-      background-color: var(--background-ovelha);
-    }
-  
-    .contato-titulo {
-    }
-  
-    .contato-img {
-    }
-  
-    .contato-img img {
-      /* padding: 16px; */
-      width: 100%;
-    }
-
-    .tenis{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-
-
-    }
-
-    footer {
-      font-size: 30px;
-      background-color: var(--background-footer);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: center;
-      color: #b3babb;
-    }
-  
-    footer a {
-      padding: 10px;
-      color: #dae5e8;
-    }
-  
-    .redesSociais {
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      font-size: 50px;
-    }
-  
-    .redesSociais a {
-    }
-  
-    .atendimento {
-      display: flex;
-      align-items: center;
-    }
-  }

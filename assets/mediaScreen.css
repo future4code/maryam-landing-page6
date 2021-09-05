@@ -1,0 +1,99 @@
+@media screen and (max-width:376px) {
+    body {
+    font-family: "Satisfy", cursive;
+    width: 375px;
+    }
+    .cabecalho {       
+    align-items: center;        
+    flex-direction: column;
+    }
+    
+    .cabecalho-logo img {
+    width: 110px;
+    }
+  
+    .navegacao {      
+    font-size: 15px;
+    }
+       
+    .navegacao-lista li, i {
+    padding: 3px;
+    }
+       
+    .descricao {     
+    padding: 10px 10px 0px;
+    font-size: 15px;      
+    flex-direction: column;      
+    }
+  
+    .descricao-produto {
+    font-size: 9px;
+    padding: 10px;
+    }
+  
+    .descricao-img img {
+    width: 100%;
+    }
+  
+    .lancamentos {       
+    font-size: 15px;
+    padding: 8px;
+    }
+  
+    .lancamentos-container {           
+    font-size: 10px;
+    }
+  
+    .lancamentos-produto {    
+    padding: 5px;
+    width: 110px;
+    font-size: 10px;
+    text-align: center;
+    }       
+    
+  
+    .promocao {     
+    height: 34vh; 
+    }
+  
+    .btn {
+    width: 70px;
+    height: 20px;       
+      }
+      
+    .promocao-botao {
+    padding: 5px;
+    }
+
+    .vantagensDoProduto {    
+    font-size: 15px;     
+    }
+       
+    .vantagensDoProduto-card {
+    font-size: 10px;
+    width: 100px;
+    }
+  
+    .contato {      
+      flex-direction: column;   
+    }
+  
+    .contato-titulo {
+        font-size: 10px;
+        padding: 10px;
+    }  
+    
+    footer {
+      font-size: 15px;     
+    }
+  
+    footer a {
+      padding: 5px;     
+    }
+  
+    .redesSociais {
+      padding: 5px;      
+      font-size: 20px;
+    } 
+   
+  }
