@@ -56,15 +56,15 @@
     height: 34vh; 
     }
   
+    .btn {background-image: linear-gradient(to right, #20002c 0%, #cbb4d4  51%, #20002c  100%)}
+    
     .btn {
-    width: 70px;
-    height: 20px;       
-      }
-      
-    .promocao-botao {
-    padding: 5px;
+         margin: 5px 0px 10px;
+         padding: 5px 10px; 
+         font-size: 8px;
+         border-radius: 15px;         
     }
-
+      
     .vantagensDoProduto {    
     font-size: 15px;     
     }
