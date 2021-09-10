@@ -1,4 +1,4 @@
-# landing-page-template
+# Landing-page-template
 
 ## Link:
 https://periodic-death.surge.sh/index.html
